@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">Fetch a file to change this text.</p>
+<script src="questions.js"></script>
+<script>
+Array.prototype.sample = function (n) { return this.map(a => [a,Math.random()]).sort(([,a],[,b]) => a-b).map(([a,])=>{return a}).slice(0,n)};
+let alphabet = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+
+document.getElementById("demo").innerHTML = (alphabet.sample(20));
+
+</script>
+</body>
+</html>

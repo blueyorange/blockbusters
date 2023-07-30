@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'ds-digi';
+  src: url('fonts/DS-DIGI.TTF')
+}
+
+body {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: row;
+  background:black;
+  font-family:'ds-digi';
+  font-size: 100%;
+}
+
+.left-container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.panel {
+  background-color: white;
+  border:solid;
+  border-color: black;
+  border-radius:1rem;
+  color: black;
+  height: 50vh;
+  min-width: 320px;
+  width: 320px;
+  height: 250px;
+  overflow-y:auto;
+  padding:1.5rem;
+  margin: 1rem;
+}
+
+.panel > h1 {
+  background-color: yellow;
+  font-size:3.2rem;
+}
+
+#question {
+  font-family: monospace;
+  font-size: 1.4rem;
+}
+svg {
+  height: 100vh;
+  width: auto;
+}
+/* grid styling */
+.hex {
+  transition: 0.4s;
+  cursor: pointer;
+  stroke: black;
+  stroke-width: 0.3;
+  cursor:default;
+}
+.yellow {
+  fill: yellow;
+}
+.hex.yellow:hover {
+  opacity: 0.5;
+}
+.hex.white {
+  fill: white;
+}
+.hex.blue {
+  fill: cyan;
+}
+.selectable:hover {
+  opacity: 0.5;
+  cursor: crosshair;
+}
+@keyframes flashing {
+  0% {fill: yellow;}
+  50% {fill: black;}
+  100% {fill:yellow;}
+}
+.selected {
+  animation: flashing 1s infinite;
+}
+.hex > text {
+  fill: black;
+  alignment-baseline: middle;
+  text-anchor:middle;
+}
+

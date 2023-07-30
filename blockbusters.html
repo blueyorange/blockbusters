@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <script src="./data/questions.js"></script>
+  <script src="./js/main.js" defer></script>
+</head>
+<body>
+  <div class="left-container">
+    <div class="panel">
+      <h1>BLOCKBUSTERS</h1>
+      <hr />
+      <div id="question">
+        Welcome to blockbusters! A question will be selected randomly to begin.
+        Click to start.
+      </div>
+      <div id="answer"></div>
+    </div>
+    <button id="startButton">Start</button>
+  </div>
+
+  <svg viewBox="0 0 110 120">
+    <defs>
+      <g class="hex" id="hexTemplate">
+        <polygon points="5,-9 -5,-9 -10,0 -5,9 5,9 10,0" />
+      </g>
+    </defs>
+    <g id="grid" transform="translate(0,9)"></g>
+  </svg>
+</body>
